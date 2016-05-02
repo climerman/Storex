@@ -79,7 +79,6 @@ namespace DAL
 
         public IDbSet<Order> Orders { get; set; }
         public IDbSet<OrderType> OrderTypes { get; set; }
-        public IDbSet<OrderedProduct> OrderedProducts { get; set; }
 
         #endregion
 

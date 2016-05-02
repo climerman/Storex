@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using DataAnnotations;
 using Domain.Contacts;
 using Domain.Identity;
+using Domain.Storage;
 
 namespace Domain.Orders
 {
@@ -30,6 +31,6 @@ namespace Domain.Orders
         public int UserId { get; set; }
         public virtual User User { get; set; }
 
-        public virtual List<OrderedProduct> OrderedProducts { get; set; }
+        public virtual List<StoredProduct> StoredProducts { get; set; }
     }
 }

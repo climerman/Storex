@@ -81,7 +81,6 @@ namespace DAL
         public IEFRepository<ContactType> ContactTypes { get; }
         public IEFRepository<PersonType> PersonTypes { get; }
         public IEFRepository<OrderType> OrderTypes { get; }
-        public IEFRepository<OrderedProduct> OrderedProducts { get; }
         public IEFRepository<StoredProduct> StoredProducts { get; }
         public IEFRepository<ProductCategory> ProductCategories { get; }
         public IContactRepository Contacts { get; }

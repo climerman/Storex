@@ -29,6 +29,5 @@ namespace Domain.Storage
         public virtual ProductCategory ProductCategory { get; set; }
 
         public virtual List<StoredProduct> StoredProducts { get; set; }
-        public virtual List<OrderedProduct> OrderedProducts { get; set; }
     }
 }

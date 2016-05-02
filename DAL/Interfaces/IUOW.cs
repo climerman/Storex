@@ -29,7 +29,6 @@ namespace DAL.Interfaces
         IEFRepository<ContactType> ContactTypes { get; }
         IEFRepository<PersonType> PersonTypes { get; }
         IEFRepository<OrderType> OrderTypes { get; }
-        IEFRepository<OrderedProduct> OrderedProducts { get; }
         IEFRepository<StoredProduct> StoredProducts { get; }
         IEFRepository<ProductCategory> ProductCategories { get; }
 
