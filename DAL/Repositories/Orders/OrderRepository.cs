@@ -18,7 +18,10 @@ namespace DAL.Repositories.Orders
             return DbSet.Where(o => o.UserId == userId)
                 .OrderBy(o => o.ModifiedAtDT)
                 .ThenBy(o => o.CreatedAtDT)
-                .Include(p => p.StoredProducts)
+                .Include(s => s.StoredProducts.Select(p => p.Product))
+                .Include(u => u.User)
+                .Include(c => c.Client)
+                .Include(t => t.OrderType)
                 .ToList();
         }
 
