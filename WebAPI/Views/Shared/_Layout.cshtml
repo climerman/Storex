@@ -1,4 +1,26 @@
-﻿<!DOCTYPE html>
+﻿@using System.Threading
+@using Microsoft.AspNet.Identity
+@{
+    var titleBag = (string.IsNullOrWhiteSpace(ViewBag.Title) ? "" : ViewBag.Title + " - ") + Resources.Common.ApplicationName;
+
+    var currentCultureCode = "root";
+
+    switch (Thread.CurrentThread.CurrentCulture.ToString())
+    {
+        case "et-EE":
+            currentCultureCode = "et";
+            break;
+        case "en-US":
+            currentCultureCode = "en";
+            break;
+        default:
+            currentCultureCode = Thread.CurrentThread.CurrentCulture.ToString();
+            break;
+    }
+}
+
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
